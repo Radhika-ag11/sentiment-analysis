@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html
+{
+  scroll-behavior: smooth;
+}
+body
+{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav 
+{
+  overflow:visible;
+  background-color: transparent;
+  position: fixed;
+  scroll-behavior: smooth;
+}
+
+.topnav a 
+{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 17px;
+  opacity: 50%;
+}
+
+.topnav a:hover 
+{
+  opacity: 100%;
+}
+
+.topnav a.active 
+{
+  background-color: transparent;
+  opacity: 100%;
+}
+.parallax-1 
+{
+  width: 100%;
+	height: 610px; 
+  background-image: url("static/bg1.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.parallax-2 
+{
+  width: 100%;
+	height: 610px; 
+  background-image: url("static/bg2.jpg");
+	background-attachment:fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.parallax-2 h1 
+{
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 50px;
+  margin: auto;
+	position: relative;
+	top: 80px;
+	width: 250px;
+	color: white;
+	text-align: center;
+}
+.parallax-2 h2
+{
+  background-attachment: fixed;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 23px;
+  line-height: 36px;
+	margin: auto;
+	position: relative;
+	top: 120px;
+	width: 80%;
+	color: white;
+	text-align: center;
+  text-transform: uppercase;
+}
+.parallax-2 h3
+{
+  background-attachment: fixed;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 23px;
+  line-height: 36px;
+	margin: auto;
+	position: relative;
+	top: 260px;
+	width: 90%;
+  background-color: beige;
+	color: brown;
+	text-align: center;
+  text-transform: uppercase;
+}
+.parallax-3 
+{
+  width: 100%;
+	height: 610px; 
+  background-image: url("static/bg3.jpg");
+	background-attachment:fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.parallax-3 img
+{
+  margin-top: 200px;
+  margin-left: 430px;
+  height: 250px;
+  background-attachment: fixed;
+}
+.parallax-3 h1
+{
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 50px;
+  margin: auto;
+	position: relative;
+	top: 80px;
+	width: 100%;
+	color: rgb(0, 0, 0);
+	text-align: center;
+  text-transform: capitalize;
+}
+.parallax-4
+{
+  width: 100%;
+	height: 610px; 
+  background-image: url("static/bg4.webp");
+	background-attachment:fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.parallax-4 img
+{
+  margin-top: 250px;
+  margin-left: 525px;
+  height: 200px;
+  background-attachment: fixed;
+}
+.parallax-4 h1
+{
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 50px;
+  margin: auto;
+	position: relative;
+	top: 100px;
+	width: 100%;
+	color: rgb(0, 0, 0);
+	text-align: center;
+  text-transform: capitalize;
+}
+.parallax-5 
+{
+  width: 100%;
+	height: 610px; 
+  background-image: url("static/bg5.jpg");
+	background-attachment:fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.parallax-5 img
+{
+  margin-top: 300px;
+  margin-left: 530px;
+  height: 200px;
+  background-attachment: fixed;
+  opacity: 80%;
+}
+.parallax-6 
+{
+  width: 100%;
+	height: 610px; 
+  background-image: url("static/bg6.webp");
+	background-attachment:fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#article">Article</a>
+  <a href="#twitter">Twitter</a>
+  <a href="#dataset">Data Set</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="parallax-1" id="home"></div>
+<div class="parallax-2" id="about">
+  <h1>About</h1>
+  <h2>Sentiment analysis is the use of natural language processing, text analysis, 
+    computational linguistics, and biometrics to systematically identify, extract, 
+    quantify, and study affective states and subjective information.
+  </h2>
+  <h3>We Provide Sentiment Analysis Through Any article on net, twitter, data sets, etc. Enjoy!</h3>
+</div>
+<div class="parallax-3" id="article">
+  <h1>Get To Know Your Article</h1>
+  <a href="http://127.0.0.1:5000/article"><img src="static/article.png"></a>
+</div>
+<div class="parallax-4" id="twitter">
+  <h1>tweet!tweet!</h1>
+  <a href="http://127.0.0.1:5000/twet"><img src="static/twitter.png"></a>
+</div>
+<div class="parallax-5" id="dataset">
+  <h1 style="color: white;">Analyze Pre-saved dataset</h1>
+  <a href="http://127.0.0.1:5000/amazon"><img src="static/data.png"></a>
+</div>
+<div class="parallax-6" id="contact"></div>
+
+</body>
+</html>
+
