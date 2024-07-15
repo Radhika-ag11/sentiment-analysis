@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <table></table>
+        <script>
+            onload = fetch("sample30.csv").then (res => {
+                return res.text ()
+            }).then (data => {
+                let result = data.split (/\r?\n|\r/).map
+                (e => {
+                    return e.split(",")
+                })
+                result.forEach(e=>{let m=e.map(e=>{return'<td>${e}</td>';})})
+                console.log (m);
+            })
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>twitterIn</title>
+<style>
+html
+{
+  scroll-behavior: smooth;
+  cursor: crosshair;
+}
+
+.pa-1 
+{
+  width: 100%;
+  height: 585px; 
+  background-image: url("/static/bg4.png");
+	background-attachment:fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pa-1 img
+{
+    height: 200px;
+    margin-top: 40px;
+    margin-left: 39%;
+}
+
+</style>
+
+<script>
+
+    function home()
+    {
+        window.open("/Project.html","_self")
+    }
+
+    function back()
+    {
+        window.open("http://127.0.0.1:5000/twet","_self")
+    }
+
+</script>
+
+</head>
+
+<body>
+<div class="pa-1">
+    <img src="/static/twitter.png">
+    <textarea id="sentence" style="resize: none; width: 50%; height: 30%; margin-top: 40px; margin-left: 25%; font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif; border-radius: 10px; opacity: 80%; background-color: white;" disabled>{{p}}
+
+Polarity= {{s}}
+    
+    </textarea>
+    <div>
+      <button style="width: 25%; height: 50px; margin-left: 25%; font-size: 19px;" onclick="home()">Back To Home Page</button>
+      <button style="width: 25%; height: 50px; margin-top: 20px; font-size: 19px;" onclick="back()">Tweet Again</button>
+    </div>
+</div>
+
+
+</body>
+</html>
+
